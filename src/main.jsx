@@ -5,6 +5,7 @@ import User from "./User.jsx";
 import Photo from "./Photo.jsx";
 import React from "react";
 import { PhotoSet } from "./PhotoSet.jsx";
+import UserImage from "./UserImage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "user",
     element: <User />,
+  },
+  {
+    path: "user/:userId",
+    element: <UserImage />,
   },
   {
     path: "photographer",
